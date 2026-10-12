@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths: ['web/**']
 permissions: { contents: read, pages: write, id-token: write }
+# 同時只跑一個部署，新的會取消舊的，避免舊版蓋掉新版
+concurrency: { group: pages, cancel-in-progress: true }
 jobs:
   deploy:
     runs-on: ubuntu-latest
