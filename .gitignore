@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+# 根目錄的截圖（螢幕擷取畫面、貼上的影像、手機照片等）
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.heic
